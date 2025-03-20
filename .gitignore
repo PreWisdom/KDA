@@ -5,6 +5,7 @@ __pycache__/
 outputs/*
 weights/*
 figures/*
+.idea/*
 train_kda_landslides.py
 test_seg.py
 
