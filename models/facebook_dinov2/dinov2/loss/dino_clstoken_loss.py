@@ -64,7 +64,7 @@ class DINOLoss(nn.Module):
         """
         Cross-entropy between softmax outputs of the teacher and student networks.
         """
-        # TODO: Use cross_entropy_distribution here
+        #
         total_loss = 0
         for s in student_output_list:
             lsm = F.log_softmax(s / self.student_temp, dim=-1)

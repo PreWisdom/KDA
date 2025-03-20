@@ -122,7 +122,7 @@ def _make_sampler(
         logger.info("sampler: sharded infinite")
         if size > 0:
             raise ValueError("sampler size > 0 is invalid")
-        # TODO: Remove support for old shuffling
+        #
         use_new_shuffle_tensor_slice = type == SamplerType.SHARDED_INFINITE_NEW
         return ShardedInfiniteSampler(
             sample_count=sample_count,

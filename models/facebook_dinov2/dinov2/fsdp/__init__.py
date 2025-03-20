@@ -136,7 +136,7 @@ class FSDPCheckpointer(Checkpointer):
             # if file doesn't exist, maybe because it has just been
             # deleted by a separate process
             return ""
-        # pyre-fixme[6]: For 2nd param expected `Union[PathLike[str], str]` but got
+        # pyre-
         #  `Union[bytes, str]`.
         return os.path.join(self.save_dir, last_saved)
 
