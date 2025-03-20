@@ -1,0 +1,16 @@
+name: SegLand
+channels:
+  - defaults
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch::pytorch=2.0.0
+  - pytorch::pytorch-cuda=11.7.0
+  - pytorch::torchvision=0.15.0
+  - omegaconf
+  - torchmetrics=0.10.3
+  - fvcore
+  - iopath
+  - pip
